@@ -31,7 +31,7 @@ Zo ziet hij er momenteel uit:
 
 | De Kalender                                                  | Een evenement bewerken                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20210312175930960](img/Logboek/image-20210312175930960.png) | ![image-20210312175959786](img/Logboek/image-20210312175959786.png) |
+| ![image-20210312175930960](img/logboek-week-1/image-20210312175930960.png) | ![image-20210312175959786](img/log-week-1/image-20210312175959786.png) |
 
 
 
