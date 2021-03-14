@@ -1,5 +1,5 @@
 # Logboek
-[terug](README.md)
+[terug](/README.md)
 
 ## Week 1
 
