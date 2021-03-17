@@ -1,4 +1,5 @@
 # Logboek
+[terug](https://martijnmeeldijk.github.io/stage/)
 
 ## Week 2
 
