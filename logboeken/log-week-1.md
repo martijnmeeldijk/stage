@@ -1,5 +1,5 @@
 # Logboek
-[terug](/README.md)
+[terug](https://martijnmeeldijk.github.io/stage/)
 
 ## Week 1
 

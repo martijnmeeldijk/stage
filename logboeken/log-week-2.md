@@ -1,4 +1,5 @@
 # Logboek
+[terug](https://martijnmeeldijk.github.io/stage/)
 
 ## Week 2
 
@@ -65,6 +66,7 @@ Dit zou later moeten aangepast worden naar een login systeem. We weten nog niet 
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -231,3 +233,6 @@ Als we al deze code laten samenwerken krijgen we dit:
 
 ![image-20210317111634200](img/log-week-2/image-20210317111634200.png) 
 
+=======
+### 17/03/2021
+>>>>>>> 53abd5ae9a303eac7f799a9144b2db29ed5c82a4
