@@ -229,3 +229,27 @@ Als we al deze code laten samenwerken krijgen we dit:
 ![image-20210317111634200](img/log-week-2/image-20210317111634200.png) 
 
 
+
+### 18/03/2020
+
+Na een call met onze vervangingsbegeleider (de persoon die ons normaal moest begeleiden is nog steeds ziek) komen we tot de ontdekking dat er een aantal dingen fout zijn in de structuur van ons project. We hebben veel te veel code geschreven in de hoofdmodule van ons project. 
+
+Neem nu als voorbeeld een inputveld van een formulier. Ik kan dat inputveld helemaal gaan uitschrijven, er stijlen op toepassen. En er nog een mooi vakje rond tekenen. 
+
+Nu wil ik dit inputveld opnieuw gebruiken, dus ik copy-paste de code en pas de naam van het veld aan. De volgende keer doe ik dit nog eens, en nog eens, en nog eens, ...  Tot nu toe nog geen probleem.
+
+Ineens word ik opgebeld door de klant en weet hij mij te vertellen dat hij het inputveld in een andere kleur wilt. Oeps... Nu moet ik in elk van die inputveldjes de kleur gaan veranderen. Ik heb ze op 100 verschillende plekken gecopy-paste, dus nu moet ik 2 uur van mijn tijd verspillen die ik aan iets nuttigers had kunnen spenderen. 
+
+De oplossing is dus om een library te maken die dat inputveldje met alle styling en vormgeving bevat. Als ik dat veldje wil gebruiken, roep ik het op. Als ik alle veldjes tegelijk wil aanpassen, moet ik dat dan maar op één plek doen.
+
+
+
+Goed, we beginnen dus met onze code op te splitsen in deze zogezegde 'libraries'. Een heus karwei, maar niet zonder nut. 
+
+
+
+### 19/03/2020
+
+Na een halve dag prutsen is het gelukt om de app eindelijk terug draaiende te krijgen. Alle modellen (evenementen, evenementtypes, leden, ...) zitten nu in de library evenals de services (de code die de data om deze modellen te vullen uit de back-end haalt). De components (zoals inputvelden, ...), zitten nu ook in de library, maar ze zouden nog verder opgesplitst moeten worden in kleinere deeltjes, om het onderhoud te vergemakkelijken.
+
+Aan de slag dan maar.
