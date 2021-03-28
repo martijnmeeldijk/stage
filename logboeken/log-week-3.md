@@ -138,3 +138,48 @@ Het is dus een best practice die onze website sneller maakt. Ik ga er wel een he
 Ik werk verder om lazy loading te implementeren.
 
 Oké het is eindelijk klaar. Ik zat super lang vast aan één error. 
+
+
+
+In de router (het onderdeel van de app dat beslist welke pagina's er worden getoond als je ergens op klikt) Kon ik om de één of andere reden geen component lazy loaden. 
+
+
+
+```typescript
+RouterModule.forRoot([
+      { 
+        path: '', 
+        component: BaseComponent,
+        children: [
+          {
+            path: 'calendar',
+            // data: { breadcrumb: '.FILES' },
+            loadChildren: () =>
+                import('@actina/feature/lazy/calendar').then(
+                  m => m.FeatureLazyCalendarModule
+                ) 
+          },
+        ]
+    
+    },
+     ]),
+```
+
+Dit was dus ook helemaal niet de bedoeling. Je moet dus aan de router een module meegeven die hij gaat lazy loaden, en dan steek je in die module een soort van 'kind-router' die dan voor alle componenten in die module de routing doet.
+
+```typescript
+RouterModule.forChild([
+   
+      {
+        path: '',
+        component: CalendarComponent,
+        pathMatch: 'full'
+      },
+    ])
+```
+
+Op dit moment is er nog maar 1 pad in de CalendarModule, de kalender zelf. Later kunnen er dan nog andere bijkomen. 
+
+
+
+Het voordeel aan het gebruik van lazy loading is dat als een gebruiker nu alleen de kalender bekijkt, dat de andere onderdelen niet geladen worden.
