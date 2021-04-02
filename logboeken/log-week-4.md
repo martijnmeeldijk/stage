@@ -46,3 +46,95 @@ Het begint er als een echte applicatie uit te zien.
 
 
 Nu doe ik als laatste vandaag nog wat styling voor het scherm waar je de inschrijvingen voor een evenement kan zien.
+
+
+
+### 31/03/2021
+
+Ik heb iets leuks gevonden. Je kan in Angular een klasse maken waarmee je alle HTTP errors in de app mee kunt opvangen. Op deze manier moeten we ons binnen de componenten geen zorgen maken om errors. 
+
+
+
+Ik heb een klasse `HTTPErrorInterceptor` gemaakt die dit doet.
+
+```typescript
+import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpErrorResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
+@Injectable()
+export class HttpErrorInterceptor implements HttpInterceptor {
+
+  constructor(private snackbar: MatSnackBar){}
+
+  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    return next.handle(request)
+      .pipe(
+        catchError((error: HttpErrorResponse) => {
+          let errorMsg = '';
+          if (error.error instanceof ErrorEvent) {
+            console.log('this is client side error');
+            errorMsg = `Error: ${error.error.message}`;
+          }
+          else if(typeof error.error.error != undefined){
+            console.log('this is server side error');
+            errorMsg = `Error: ${error.status},  Message: ${error.error.error}`;
+          }
+          else {
+            console.log('this is server side error');
+            errorMsg = `Error: ${error.status},  Message: ${error.message}`;
+          }
+          console.log(error)
+          this.snackbar.open(errorMsg, 'close', { duration: 2000, panelClass: 'snack-bar' });
+          return throwError(errorMsg);
+        })
+      )
+  }
+}
+```
+
+Nu moet ik ook niet in elke component apart de snackbar oproepen. Handig toch!
+
+
+
+### 01/04/2021
+
+Yeey! Alexander is terug!
+
+We hebben een demo gegeven om te laten zien waar we nu zitten met het project en we hebben wat feedback gekregen. 
+
+Mijn taak is nu om de UI mooi te krijgen. (spoiler; ik doe dit heel graag). Ik mag me nu lekker de komende dagen bezig houden met het herdesignen van alles wat we tot nu toe hebben gemaakt.
+
+Ik begin met de kalender zelf:
+
+![image-20210402161719263](img/log-week-4/image-20210402161719263.png)
+
+Nu ziet hij er een beetje minder uit als iets dat in 2010 ontworpen is.
+
+
+
+Nu ga ik verder met het designen van de dialoogvensters. Hiervoor heb ik nog wat onderliggende aanpassingen moeten doen. Ik gebruik nu de dialoogvensters van angular-material in plaats van die van bootstrap.
+
+![image-20210402161941977](img/log-week-4/image-20210402161941977.png)
+
+Ik ben echt trots, het begint er allemaal wel wat cleaner uit te zien. Verder doe ik nog wat aanpassingen aan de `EditEventComponent` en `NewEventComponent`
+
+
+
+### 02/04/2021
+
+Vandaag kan ik lekker verder werken aan de UI. Ik ga triestig zijn als het gedaan is. Dit is zo leuk. 
+
+Ik ga verder met het design van de `EventDetailComponent`. Zo ziet het er na wat werk uit:
+
+![image-20210402162554744](img/log-week-4/image-20210402162554744.png)
+
+We komen van dit:
+
+![image-20210402163327543](img/log-week-4/image-20210402163327543.png)
+
+Om eerlijk te zijn laat de nieuwe versie toch vermoedelijk wel een betere indruk achter bij toekomstige gebruikers.
+
+Ik ga maar weer eens verder werken. 
