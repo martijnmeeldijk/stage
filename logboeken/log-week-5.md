@@ -91,7 +91,7 @@ Oké vandaag kan ik weer aan iets nieuws beginnen. Op dit moment gebruikt de app
 In angular kan je de `TranslateModule` van `ngx-translate` gebruiken. 
 
 ```typescript
-{{ 'KEY' | translate }}
+"{{ 'KEY' | translate }}"
 ```
 
 Je moet dan elk tekstveld vervangen met een `KEY` die je dan door een translate pipe gooit. 
