@@ -166,3 +166,11 @@ Je kan dus gemakkelijk nieuwe talen toevoegen door het scriptje opnieuw te laten
 ### 09/04/2021
 
 Alle velden worden nu dus mooi vertaald, behalve de kalender zelf, omdat deze uit een externe library komt. Nu moet ik dus even kijken hoe ik dat kan oplossen.
+
+
+
+Ik heb het opgelost, de velden worden vertaald, maar spijtig genoeg krijg ik ze niet veranderd terwijl de applicatie draait. Ik zal het is moeten vragen aan één van de begeleiders hoe ik dat moet oplossen. 
+
+Nu hebben ze mij ook gevraagd om er voor te zorgen dat de site ook deftig werkt op mobiele apparaten. Gemakkelijker gezegd dan gedaan. 
+
+Het is gelukt om zo een coole mobiele sidebar te maken.
