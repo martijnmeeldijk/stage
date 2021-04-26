@@ -6,4 +6,9 @@ Hier vind je alle nuttige info over mijn stage:
 * [Logboek Week 3](logboeken/log-week-3.md)
 * [Logboek Week 4](logboeken/log-week-4.md)
 * [Logboek Week 5](logboeken/log-week-5.md)
+* [Logboek Week 6](logboeken/log-week-6.md)
+* [Logboek Week 7](logboeken/log-week-7.md)
+* [Logboek Week 8](logboeken/log-week-8.md)
+
+
 
