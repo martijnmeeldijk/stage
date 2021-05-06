@@ -33,5 +33,7 @@ Ik werk nog verder aan mijn ding. Het begint me toch wel te ergeren, alles wordt
 
 Vandaag werk ik samen met Steven om ervoor te zorgen dat we iets hebben dat ten minste *werkt*. Alexander wilt graag een testomgeving opzetten. Zo kunnen we iets beter te werk gaan om aan toekomstige bugs en features te werken. 
 
+We hebben dus bepaalde functionaliteiten die voor problemen zorgen tijdelijk uitgezet. (blijkbaar deed mijn vertaalmodule vreemd als we hem samen zetten met de andere features). 
+
 ### 30/04/2021
 
