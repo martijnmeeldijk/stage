@@ -92,3 +92,10 @@ Nu kunnen we in onze `HTML`-code ervoor zorgen dat `users` de knop voor nieuwe e
 
 ### 06/05/2021
 
+Ik werk nog verder aan dat van gisteren. (ik moet de hele applicatie afgaan om te zoeken waar er nu precies dingen moeten verborgen worden)
+
+
+
+### 07/05/2021
+
+Vandaag heb ik mijn tussentijdse evaluatie gehad. (het is misschien een beetje laat daarvoor, maar ja, beter dan niks) De evaluatie was iets beter dan ik had verwacht. Zo waren overall vrij content. Ik moest toch wel wat werken aan mijn communicatie. Goed.
