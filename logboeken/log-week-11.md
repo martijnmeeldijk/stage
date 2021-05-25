@@ -65,3 +65,29 @@ Nu hebben we wel één klein probleempje. Ik zou graag ook een laad-icon willen 
 Voordat de app geladen wordt, wordt een een klein html bestand gestuurd met enkel het laadicoontje. Zo weet de gebruiker dat de site niet kapot is als het lang duurt om te laden.
 
 Cool. 
+
+
+
+### 19/05/2021
+
+Vandaag fix ik nog wat bugs. Zo werd bijvoorbeeld het aantal inschrijvingen op een event niet meteen geüpdatet wanneer iemand zich inschreef voor een evenement:
+
+![image-20210525162036480](img/log-week-11/image-20210525162036480.png) 
+
+(het getal naast het ticket-icoontje)
+
+
+
+Ik ben ook heel de site afgegaan om te controleren of de kleuren overal kloppen. Na een tijd zoeken kwam ik nog een aantal roosgekleurde checkboxes tegen.
+
+
+
+Ik heb ook nog verder gewerkt aan het members gedeelte. Het profiel toont nu alle nodige gegevens. Je kan nu ook je profiel bewerken.
+
+
+
+### 20/05/2021
+
+Vandaag is het de laatste werkdag van mijn medestudent, Steven. Ik zal je missen :cry:
+
+We houden ons de rest van de dag bezig met alles op te kuisen. Pull requests maken voor branches die we nog niet gemerged hebben. Nutteloze branches verwijderen. Merge conflicts oplossen...
