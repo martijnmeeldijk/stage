@@ -13,6 +13,7 @@ Hier vind je alle nuttige info over mijn stage:
 * [Logboek Week 10](logboeken/log-week-10.md)
 * [Logboek Week 11](logboeken/log-week-11.md)
 * [Logboek Week 12](logboeken/log-week-12.md)
+* [Logboek Week 13](logboeken/log-week-13.md)
 
 
 
